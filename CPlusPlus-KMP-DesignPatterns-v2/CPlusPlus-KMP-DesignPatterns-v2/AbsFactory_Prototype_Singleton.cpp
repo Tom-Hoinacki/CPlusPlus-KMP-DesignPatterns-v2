@@ -7,6 +7,7 @@
 //
 
 #include "AbsFactory_Prototype_Singleton.h"
+#include "Adapter.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -22,7 +23,7 @@ Clothing::Clothing(string name)
 }
 
 // Prototype
-InventoryItem* Clothing::purchase(string name)
+InventoryItem* Clothing::addToCart(string name)
 {
     return new Clothing(name);
 }
@@ -37,7 +38,7 @@ Shoe::Shoe(string name)
 }
 
 // Prototpye
-InventoryItem* Shoe::purchase(string name)
+InventoryItem* Shoe::addToCart(string name)
 {
     return new Shoe(name);
 }
@@ -64,7 +65,12 @@ ShoppingCart* ShoppingCart::instance()
     return ShoppingCart::s_instance;
 };
 
-
+/* CALLS ADAPTER */
+void ShoppingCart::purchase()
+{
+    LegacyShoppingCart* lsc = new LegacyShoppingCart();
+    lsc->legacyPurchase();
+};
 
 
 
@@ -97,7 +103,7 @@ void startShopping()
     displayInventory();
     int itemNum;
     Clothing c;
-    Shoe s;
+    Shoe shoe;
     
     cout << "Add items to shopping cart, when finished enter 99 to view shopping cart.\n\n";
     
@@ -118,18 +124,18 @@ void startShopping()
         switch (itemNum)
         {
             case 1:
-                ShoppingCart::instance()->cartItems.push_back(c.purchase("Jacket"));
+                ShoppingCart::instance()->cartItems.push_back(c.addToCart("Jacket"));
                 break;
             case 2:
-                ShoppingCart::instance()->cartItems.push_back(c.purchase("Pants"));
+                ShoppingCart::instance()->cartItems.push_back(c.addToCart("Pants"));
                 break;
             case 3:
-                ShoppingCart::instance()->cartItems.push_back(c.purchase("Gloves"));
+                ShoppingCart::instance()->cartItems.push_back(c.addToCart("Gloves"));
                 break;
             case 4:
-                ShoppingCart::instance()->cartItems.push_back(c.purchase("Hat"));
+                ShoppingCart::instance()->cartItems.push_back(c.addToCart("Hat"));
             case 5:
-                ShoppingCart::instance()->cartItems.push_back(s.purchase("Boots"));
+                ShoppingCart::instance()->cartItems.push_back(shoe.addToCart("Boots"));
                 break;
             default:
                 break;

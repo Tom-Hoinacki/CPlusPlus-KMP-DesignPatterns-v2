@@ -11,6 +11,7 @@
 #include "KMP.h"
 #include "AbsFactory_Prototype_Singleton.h"
 #include "Builder.h"
+#include "Adapter.h"
 
 using namespace std;
 
@@ -74,6 +75,7 @@ void displayMainMenu()
         cout << "2. View inventory [Abstract Factory]\n";
         cout << "3. Create an outfit [Builder]\n";
         cout << "4. Add items to shopping cart [Prototype | Singleton]\n";
+        cout << "5. Checkout and purchase shopping cart items [Adapter]\n";
         
         cout << "\n\n";
         
@@ -103,6 +105,9 @@ void displayMainMenu()
                 break;
             case 4:
                 startShopping();
+                break;
+            case 5:
+                checkOutAndPurchaseShoppingCartItems();
             default:
                 break;
         }

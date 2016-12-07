@@ -17,7 +17,7 @@ using namespace std;
 class InventoryItem
 {
 public:
-    virtual InventoryItem* purchase(string name) = 0;
+    virtual InventoryItem* addToCart(string name) = 0;
     string name_;
     
 protected:
@@ -30,7 +30,7 @@ class Clothing : public InventoryItem
 public:
     Clothing();
     Clothing(string name);
-    InventoryItem* purchase(string name);
+    InventoryItem* addToCart(string name);
 };
 
 class Shoe : public InventoryItem
@@ -38,7 +38,7 @@ class Shoe : public InventoryItem
 public:
     Shoe();
     Shoe(string name);
-    InventoryItem* purchase(string name);
+    InventoryItem* addToCart(string name);
 };
 
 class Factory
@@ -62,11 +62,7 @@ class ShoppingCart
     public:
         static ShoppingCart *instance();
         vector<InventoryItem*> cartItems;
-        void purchase()
-        {
-            
-        }
-    
+        void purchase();
 };
 
 // Abstract Factory

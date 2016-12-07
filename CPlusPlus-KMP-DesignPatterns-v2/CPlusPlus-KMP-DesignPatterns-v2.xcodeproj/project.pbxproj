@@ -11,6 +11,7 @@
 		650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8791DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp */; };
 		650EE87E1DF7CC300057A742 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE87C1DF7CC300057A742 /* Builder.cpp */; };
 		650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE87F1DF7CCAB0057A742 /* KMP.cpp */; };
+		650EE8841DF7CFC90057A742 /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8821DF7CFC90057A742 /* Adapter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		650EE87D1DF7CC300057A742 /* Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
 		650EE87F1DF7CCAB0057A742 /* KMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMP.cpp; sourceTree = "<group>"; };
 		650EE8801DF7CCAB0057A742 /* KMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
+		650EE8821DF7CFC90057A742 /* Adapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Adapter.cpp; sourceTree = "<group>"; };
+		650EE8831DF7CFC90057A742 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
+				650EE8821DF7CFC90057A742 /* Adapter.cpp */,
+				650EE8831DF7CFC90057A742 /* Adapter.h */,
 				650EE8791DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp */,
 				650EE87A1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.h */,
 				650EE87C1DF7CC300057A742 /* Builder.cpp */,
@@ -137,6 +142,7 @@
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,
 				650EE8731DF7C6FE0057A742 /* main.cpp in Sources */,
 				650EE87E1DF7CC300057A742 /* Builder.cpp in Sources */,
+				650EE8841DF7CFC90057A742 /* Adapter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
