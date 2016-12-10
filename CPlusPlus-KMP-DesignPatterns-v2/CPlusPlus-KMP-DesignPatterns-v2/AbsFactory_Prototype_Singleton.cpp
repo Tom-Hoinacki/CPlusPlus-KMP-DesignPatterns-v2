@@ -8,10 +8,19 @@
 
 #include "AbsFactory_Prototype_Singleton.h"
 #include "Adapter.h"
+#include "Bridge.h"
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
+
+
+
+
+void InventoryItem::printSizes()
+{
+    sizeImp_->printSizes();
+}
 
 
 /* CLOTHING */
@@ -22,11 +31,20 @@ Clothing::Clothing(string name)
     name_ = name;
 }
 
+Clothing::Clothing(string name, vector<string> sizes, string sizeRegion)
+{
+    name_ = name;
+   
+    // Bridge
+    sizeImp_ = new ClothingSizeImp(sizes, sizeRegion);
+}
+
 // Prototype
 InventoryItem* Clothing::addToCart(string name)
 {
     return new Clothing(name);
 }
+
 
 
 /* SHOES */
@@ -37,11 +55,20 @@ Shoe::Shoe(string name)
     name_ = name;
 }
 
+Shoe::Shoe(string name, vector<string> sizes, string sizeRegion)
+{
+    name_ = name;
+    
+    // Bridge
+    sizeImp_ = new ShoeSizeImp(sizes, sizeRegion);
+}
+
 // Prototpye
 InventoryItem* Shoe::addToCart(string name)
 {
     return new Shoe(name);
 }
+
 
 
 /* FACTORY FUNCTIONS */

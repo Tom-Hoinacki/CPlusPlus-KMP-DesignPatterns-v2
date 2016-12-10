@@ -12,6 +12,7 @@
 #include "AbsFactory_Prototype_Singleton.h"
 #include "Builder.h"
 #include "Adapter.h"
+#include "Bridge.h"
 
 using namespace std;
 
@@ -74,15 +75,16 @@ void displayMainMenu()
         cout << "*********************************" << endl;
         cout << "2. View inventory [Abstract Factory]\n";
         cout << "3. Create an outfit [Builder]\n";
-        cout << "4. Add items to shopping cart [Prototype | Singleton]\n";
+        cout << "4. Add items to shopping cart [Prototype & Singleton]\n";
         cout << "5. Checkout and purchase shopping cart items [Adapter]\n";
+        cout << "6. Display sizes for an item [Bridge]\n";
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 5)
+        while (option < 1 || option > 6)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -108,6 +110,11 @@ void displayMainMenu()
                 break;
             case 5:
                 checkOutAndPurchaseShoppingCartItems();
+                break;
+            case 6:
+                displaySizesForItem();
+                break;
+
             default:
                 break;
         }
