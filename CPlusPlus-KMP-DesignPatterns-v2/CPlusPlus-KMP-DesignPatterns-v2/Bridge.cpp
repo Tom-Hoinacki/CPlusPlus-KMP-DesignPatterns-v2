@@ -61,7 +61,6 @@ void displaySizesForItem()
     
     displayInventory();
     
-    cout << "\n\n";
     cout << "Choose an item to display available sizes: ";
     cin >> itemNum;
     

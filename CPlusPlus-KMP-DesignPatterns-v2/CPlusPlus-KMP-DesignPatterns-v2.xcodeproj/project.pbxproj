@@ -13,6 +13,7 @@
 		650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE87F1DF7CCAB0057A742 /* KMP.cpp */; };
 		650EE8841DF7CFC90057A742 /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8821DF7CFC90057A742 /* Adapter.cpp */; };
 		650EE8871DFA5B0E0057A742 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8851DFA5B0E0057A742 /* Bridge.cpp */; };
+		650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8881DFD0A340057A742 /* Composite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		650EE8831DF7CFC90057A742 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		650EE8851DFA5B0E0057A742 /* Bridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
 		650EE8861DFA5B0E0057A742 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		650EE8881DFD0A340057A742 /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
+		650EE8891DFD0A340057A742 /* Composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Composite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
+				650EE8881DFD0A340057A742 /* Composite.cpp */,
+				650EE8891DFD0A340057A742 /* Composite.h */,
 				650EE8821DF7CFC90057A742 /* Adapter.cpp */,
 				650EE8831DF7CFC90057A742 /* Adapter.h */,
 				650EE8791DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp */,
@@ -146,6 +151,7 @@
 				650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */,
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,
 				650EE8731DF7C6FE0057A742 /* main.cpp in Sources */,
+				650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */,
 				650EE87E1DF7CC300057A742 /* Builder.cpp in Sources */,
 				650EE8871DFA5B0E0057A742 /* Bridge.cpp in Sources */,
 				650EE8841DF7CFC90057A742 /* Adapter.cpp in Sources */,
