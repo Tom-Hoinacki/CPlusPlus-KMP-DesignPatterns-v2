@@ -8,8 +8,6 @@
 
 #include "Proxy.h"
 
-CustomerInfo::CustomerInfo(){};
-
 GiftCashProtected::GiftCashProtected()
 {
     balance_ = 1025;
@@ -31,12 +29,8 @@ int GiftCash::getBalance()
 
 void displayGiftCardCashAvailable()
 {
-    CustomerInfo* ci = new CustomerInfo();
-    ci->customerList_ = { "Sally", "Bob", "Tim", "Abby" };
-    
     GiftCashProtected gcp;
     GiftCash gc;
-
     
     cout << "Total gift card cash available:" << endl;
     cout << "*******************************" << endl;

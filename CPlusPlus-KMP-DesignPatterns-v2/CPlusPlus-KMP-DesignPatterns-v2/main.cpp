@@ -17,6 +17,7 @@
 #include "Decorator.h"
 #include "Facade.h"
 #include "Proxy.h"
+#include "ChainOfResponsibility.h"
 
 using namespace std;
 
@@ -86,13 +87,14 @@ void displayMainMenu()
         cout << "8. View default gift shipping order settings [Decorator]\n";
         cout << "9. Start sale promotion for store [Facade]\n";
         cout << "10. Display total gift card giveaway cash available [Proxy]\n";
+        cout << "11. Display log for batch process of shipment batch being handled [Chain of Responsibility]\n";
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 10)
+        while (option < 1 || option > 11)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -133,6 +135,9 @@ void displayMainMenu()
                 break;
             case 10:
                 displayGiftCardCashAvailable();
+                break;
+            case 11:
+                displayHandledShipment();
                 break;
 
             default:
