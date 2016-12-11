@@ -14,6 +14,7 @@
 #include "Adapter.h"
 #include "Bridge.h"
 #include "Composite.h"
+#include "Decorator.h"
 
 using namespace std;
 
@@ -80,13 +81,14 @@ void displayMainMenu()
         cout << "5. Checkout and purchase shopping cart items [Adapter]\n";
         cout << "6. Display sizes for an item [Bridge]\n";
         cout << "7. Display company directory [Composite]\n";
+        cout << "8. View default gift shipping order settings [Decorator]\n";
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 7)
+        while (option < 1 || option > 8)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -118,6 +120,9 @@ void displayMainMenu()
                 break;
             case 7:
                 displayCompanyDirectory();
+                break;
+            case 8:
+                displayDefaultGiftShippingSetting();
                 break;
 
             default:
