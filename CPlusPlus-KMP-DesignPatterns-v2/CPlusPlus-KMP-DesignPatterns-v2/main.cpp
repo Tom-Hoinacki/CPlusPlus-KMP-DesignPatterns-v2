@@ -16,6 +16,7 @@
 #include "Composite.h"
 #include "Decorator.h"
 #include "Facade.h"
+#include "Proxy.h"
 
 using namespace std;
 
@@ -84,13 +85,14 @@ void displayMainMenu()
         cout << "7. Display company directory [Composite]\n";
         cout << "8. View default gift shipping order settings [Decorator]\n";
         cout << "9. Start sale promotion for store [Facade]\n";
+        cout << "10. Display total gift card giveaway cash available [Proxy]\n";
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 9)
+        while (option < 1 || option > 10)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -128,6 +130,9 @@ void displayMainMenu()
                 break;
             case 9:
                 startSalePromotion();
+                break;
+            case 10:
+                displayGiftCardCashAvailable();
                 break;
 
             default:

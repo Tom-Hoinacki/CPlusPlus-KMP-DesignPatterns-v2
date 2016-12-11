@@ -16,6 +16,7 @@
 		650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8881DFD0A340057A742 /* Composite.cpp */; };
 		650EE88D1DFD30630057A742 /* Decorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE88B1DFD30630057A742 /* Decorator.cpp */; };
 		650EE8901DFD3A9C0057A742 /* Facade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE88E1DFD3A9C0057A742 /* Facade.cpp */; };
+		650EE8931DFD47000057A742 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8911DFD47000057A742 /* Proxy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		650EE88C1DFD30630057A742 /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
 		650EE88E1DFD3A9C0057A742 /* Facade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Facade.cpp; sourceTree = "<group>"; };
 		650EE88F1DFD3A9C0057A742 /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		650EE8911DFD47000057A742 /* Proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Proxy.cpp; sourceTree = "<group>"; };
+		650EE8921DFD47000057A742 /* Proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
+				650EE8911DFD47000057A742 /* Proxy.cpp */,
+				650EE8921DFD47000057A742 /* Proxy.h */,
 				650EE88E1DFD3A9C0057A742 /* Facade.cpp */,
 				650EE88F1DFD3A9C0057A742 /* Facade.h */,
 				650EE88B1DFD30630057A742 /* Decorator.cpp */,
@@ -160,6 +165,7 @@
 			files = (
 				650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */,
 				650EE8901DFD3A9C0057A742 /* Facade.cpp in Sources */,
+				650EE8931DFD47000057A742 /* Proxy.cpp in Sources */,
 				650EE88D1DFD30630057A742 /* Decorator.cpp in Sources */,
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,
 				650EE8731DF7C6FE0057A742 /* main.cpp in Sources */,
