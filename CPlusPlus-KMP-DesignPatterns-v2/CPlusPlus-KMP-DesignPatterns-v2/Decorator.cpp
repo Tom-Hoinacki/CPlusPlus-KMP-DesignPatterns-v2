@@ -15,6 +15,8 @@ ShippingOrder::ShippingOrder(string containerSize)
 
 void ShippingOrder::createShippingOrder()
 {
+    cout << "Default gift shipping settings:" << endl;
+    cout << "*******************************" << endl;
     cout << "* Shipping container is a " << containerSize_ << endl;
 }
 
