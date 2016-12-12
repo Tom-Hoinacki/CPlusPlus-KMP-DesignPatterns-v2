@@ -19,6 +19,7 @@
 #include "Proxy.h"
 #include "ChainOfResponsibility.h"
 #include "Command.h"
+#include "Iterator.h"
 
 using namespace std;
 
@@ -90,13 +91,15 @@ void displayMainMenu()
         cout << "10. Display total gift card giveaway cash available [Proxy]\n";
         cout << "11. Display log for batch process of shipment batch being handled [Chain of Responsibility]\n";
         cout << "12. View user action activity log [Command]\n";
+        cout << "13. View current invoices [Iterator]\n";
+
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 12)
+        while (option < 1 || option > 13)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -143,6 +146,9 @@ void displayMainMenu()
                 break;
             case 12:
                 displayUserActivityLog();
+                break;
+            case 13:
+                displayCurrentInvoices();
                 break;
 
             default:

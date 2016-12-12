@@ -19,6 +19,7 @@
 		650EE8931DFD47000057A742 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8911DFD47000057A742 /* Proxy.cpp */; };
 		650EE8961DFDDD8C0057A742 /* ChainOfResponsibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8941DFDDD8C0057A742 /* ChainOfResponsibility.cpp */; };
 		650EE8991DFE192D0057A742 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8971DFE192D0057A742 /* Command.cpp */; };
+		650EE89F1DFE51650057A742 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE89D1DFE51650057A742 /* Iterator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,8 @@
 		650EE8951DFDDD8C0057A742 /* ChainOfResponsibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibility.h; sourceTree = "<group>"; };
 		650EE8971DFE192D0057A742 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		650EE8981DFE192D0057A742 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		650EE89D1DFE51650057A742 /* Iterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Iterator.cpp; path = ../Iterator.cpp; sourceTree = "<group>"; };
+		650EE89E1DFE51650057A742 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = ../Iterator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
+				650EE89E1DFE51650057A742 /* Iterator.h */,
+				650EE89D1DFE51650057A742 /* Iterator.cpp */,
 				650EE8971DFE192D0057A742 /* Command.cpp */,
 				650EE8981DFE192D0057A742 /* Command.h */,
 				650EE8941DFDDD8C0057A742 /* ChainOfResponsibility.cpp */,
@@ -107,9 +112,9 @@
 				650EE8831DF7CFC90057A742 /* Adapter.h */,
 				650EE8791DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp */,
 				650EE87A1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.h */,
-				650EE87C1DF7CC300057A742 /* Builder.cpp */,
 				650EE87F1DF7CCAB0057A742 /* KMP.cpp */,
 				650EE8801DF7CCAB0057A742 /* KMP.h */,
+				650EE87C1DF7CC300057A742 /* Builder.cpp */,
 				650EE87D1DF7CC300057A742 /* Builder.h */,
 				650EE8851DFA5B0E0057A742 /* Bridge.cpp */,
 				650EE8861DFA5B0E0057A742 /* Bridge.h */,
@@ -182,6 +187,7 @@
 				650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */,
 				650EE8991DFE192D0057A742 /* Command.cpp in Sources */,
 				650EE87E1DF7CC300057A742 /* Builder.cpp in Sources */,
+				650EE89F1DFE51650057A742 /* Iterator.cpp in Sources */,
 				650EE8871DFA5B0E0057A742 /* Bridge.cpp in Sources */,
 				650EE8961DFDDD8C0057A742 /* ChainOfResponsibility.cpp in Sources */,
 				650EE8841DF7CFC90057A742 /* Adapter.cpp in Sources */,
