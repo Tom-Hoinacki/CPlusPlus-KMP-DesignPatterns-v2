@@ -18,6 +18,7 @@
 #include "Facade.h"
 #include "Proxy.h"
 #include "ChainOfResponsibility.h"
+#include "Command.h"
 
 using namespace std;
 
@@ -72,12 +73,12 @@ void displayMainMenu()
         cout << "\n\n";
         cout << "MAIN MENU\n\n";
         
-        cout << "User Navigation Data Menu" << endl;
-        cout << "*************************" << endl;
+        cout << "User Navigation Data Menu (Knuth-Morris-Pratt)" << endl;
+        cout << "**********************************************" << endl;
         cout << "1. View all users' page navigation sessions data (re-randomizes each time selected).\n\n(Each page is a letter, the pages are A, B, C.  The order of the letters in the page navigation string is the page order which the user navigated during that session [3 users created, 3 sessions per user, 25 pages navigated per session (randomized page orders)]. Top lists of most frequent patterns for all users and each invidivdual user at end of data display). \n";
         
-        cout << "\n\nApparel Inventory, Shopping Menu, & Company Info" << endl;
-        cout << "****************************************************" << endl;
+        cout << "\n\nApparel Inventory, Shopping Menu, & Company Info (Design Patterns)" << endl;
+        cout << "******************************************************************" << endl;
         cout << "2. View inventory [Abstract Factory]\n";
         cout << "3. Create an outfit [Builder]\n";
         cout << "4. Add items to shopping cart [Prototype & Singleton]\n";
@@ -88,13 +89,14 @@ void displayMainMenu()
         cout << "9. Start sale promotion for store [Facade]\n";
         cout << "10. Display total gift card giveaway cash available [Proxy]\n";
         cout << "11. Display log for batch process of shipment batch being handled [Chain of Responsibility]\n";
+        cout << "12. View user action activity log [Command]\n";
         
         cout << "\n\n";
         
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 11)
+        while (option < 1 || option > 12)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -138,6 +140,9 @@ void displayMainMenu()
                 break;
             case 11:
                 displayHandledShipment();
+                break;
+            case 12:
+                displayUserActivityLog();
                 break;
 
             default:
