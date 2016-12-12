@@ -9,7 +9,6 @@
 #include "Command.h"
 #include <iostream>  
 #include <string>  
-#include "CommandUser.h"
 using namespace std;
 
 void Receiver::signIn(string name)

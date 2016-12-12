@@ -19,7 +19,6 @@
 		650EE8931DFD47000057A742 /* Proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8911DFD47000057A742 /* Proxy.cpp */; };
 		650EE8961DFDDD8C0057A742 /* ChainOfResponsibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8941DFDDD8C0057A742 /* ChainOfResponsibility.cpp */; };
 		650EE8991DFE192D0057A742 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8971DFE192D0057A742 /* Command.cpp */; };
-		650EE89C1DFE1E960057A742 /* CommandUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE89A1DFE1E960057A742 /* CommandUser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,8 +58,6 @@
 		650EE8951DFDDD8C0057A742 /* ChainOfResponsibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChainOfResponsibility.h; sourceTree = "<group>"; };
 		650EE8971DFE192D0057A742 /* Command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		650EE8981DFE192D0057A742 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
-		650EE89A1DFE1E960057A742 /* CommandUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandUser.cpp; sourceTree = "<group>"; };
-		650EE89B1DFE1E960057A742 /* CommandUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandUser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +106,6 @@
 				650EE8821DF7CFC90057A742 /* Adapter.cpp */,
 				650EE8831DF7CFC90057A742 /* Adapter.h */,
 				650EE8791DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp */,
-				650EE89A1DFE1E960057A742 /* CommandUser.cpp */,
-				650EE89B1DFE1E960057A742 /* CommandUser.h */,
 				650EE87A1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.h */,
 				650EE87C1DF7CC300057A742 /* Builder.cpp */,
 				650EE87F1DF7CCAB0057A742 /* KMP.cpp */,
@@ -184,7 +179,6 @@
 				650EE88D1DFD30630057A742 /* Decorator.cpp in Sources */,
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,
 				650EE8731DF7C6FE0057A742 /* main.cpp in Sources */,
-				650EE89C1DFE1E960057A742 /* CommandUser.cpp in Sources */,
 				650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */,
 				650EE8991DFE192D0057A742 /* Command.cpp in Sources */,
 				650EE87E1DF7CC300057A742 /* Builder.cpp in Sources */,
