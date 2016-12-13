@@ -20,6 +20,7 @@
 #include "ChainOfResponsibility.h"
 #include "Command.h"
 #include "Iterator.h"
+#include "Observer.h"
 
 using namespace std;
 
@@ -92,6 +93,7 @@ void displayMainMenu()
         cout << "11. Display log for batch process of shipment batch being handled [Chain of Responsibility]\n";
         cout << "12. View user action activity log [Command]\n";
         cout << "13. View current invoices [Iterator]\n";
+        cout << "14. View daily store stats [Observer]\n";
 
         
         cout << "\n\n";
@@ -99,7 +101,7 @@ void displayMainMenu()
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 13)
+        while (option < 1 || option > 14)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -149,6 +151,9 @@ void displayMainMenu()
                 break;
             case 13:
                 displayCurrentInvoices();
+                break;
+            case 14:
+                displaySiteStats();
                 break;
 
             default:

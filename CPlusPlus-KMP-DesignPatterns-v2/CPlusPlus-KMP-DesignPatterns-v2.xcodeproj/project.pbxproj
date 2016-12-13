@@ -20,6 +20,7 @@
 		650EE8961DFDDD8C0057A742 /* ChainOfResponsibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8941DFDDD8C0057A742 /* ChainOfResponsibility.cpp */; };
 		650EE8991DFE192D0057A742 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8971DFE192D0057A742 /* Command.cpp */; };
 		650EE89F1DFE51650057A742 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE89D1DFE51650057A742 /* Iterator.cpp */; };
+		650EE8A21DFE73F10057A742 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A01DFE73F10057A742 /* Observer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,8 @@
 		650EE8981DFE192D0057A742 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
 		650EE89D1DFE51650057A742 /* Iterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Iterator.cpp; path = ../Iterator.cpp; sourceTree = "<group>"; };
 		650EE89E1DFE51650057A742 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = ../Iterator.h; sourceTree = "<group>"; };
+		650EE8A01DFE73F10057A742 /* Observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		650EE8A11DFE73F10057A742 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
 				650EE89E1DFE51650057A742 /* Iterator.h */,
 				650EE89D1DFE51650057A742 /* Iterator.cpp */,
+				650EE8A01DFE73F10057A742 /* Observer.cpp */,
+				650EE8A11DFE73F10057A742 /* Observer.h */,
 				650EE8971DFE192D0057A742 /* Command.cpp */,
 				650EE8981DFE192D0057A742 /* Command.h */,
 				650EE8941DFDDD8C0057A742 /* ChainOfResponsibility.cpp */,
@@ -183,6 +188,7 @@
 				650EE8931DFD47000057A742 /* Proxy.cpp in Sources */,
 				650EE88D1DFD30630057A742 /* Decorator.cpp in Sources */,
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,
+				650EE8A21DFE73F10057A742 /* Observer.cpp in Sources */,
 				650EE8731DF7C6FE0057A742 /* main.cpp in Sources */,
 				650EE88A1DFD0A340057A742 /* Composite.cpp in Sources */,
 				650EE8991DFE192D0057A742 /* Command.cpp in Sources */,
