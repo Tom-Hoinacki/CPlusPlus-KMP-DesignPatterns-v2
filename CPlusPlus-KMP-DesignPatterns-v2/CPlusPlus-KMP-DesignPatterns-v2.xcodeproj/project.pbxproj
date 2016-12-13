@@ -21,6 +21,7 @@
 		650EE8991DFE192D0057A742 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8971DFE192D0057A742 /* Command.cpp */; };
 		650EE89F1DFE51650057A742 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE89D1DFE51650057A742 /* Iterator.cpp */; };
 		650EE8A21DFE73F10057A742 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A01DFE73F10057A742 /* Observer.cpp */; };
+		650EE8A51DFFCE460057A742 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A31DFFCE460057A742 /* State.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,8 @@
 		650EE89E1DFE51650057A742 /* Iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Iterator.h; path = ../Iterator.h; sourceTree = "<group>"; };
 		650EE8A01DFE73F10057A742 /* Observer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
 		650EE8A11DFE73F10057A742 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		650EE8A31DFFCE460057A742 /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		650EE8A41DFFCE460057A742 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				650EE87D1DF7CC300057A742 /* Builder.h */,
 				650EE8851DFA5B0E0057A742 /* Bridge.cpp */,
 				650EE8861DFA5B0E0057A742 /* Bridge.h */,
+				650EE8A31DFFCE460057A742 /* State.cpp */,
+				650EE8A41DFFCE460057A742 /* State.h */,
 			);
 			path = "CPlusPlus-KMP-DesignPatterns-v2";
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			files = (
 				650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */,
 				650EE8901DFD3A9C0057A742 /* Facade.cpp in Sources */,
+				650EE8A51DFFCE460057A742 /* State.cpp in Sources */,
 				650EE8931DFD47000057A742 /* Proxy.cpp in Sources */,
 				650EE88D1DFD30630057A742 /* Decorator.cpp in Sources */,
 				650EE87B1DF7C7390057A742 /* AbsFactory_Prototype_Singleton.cpp in Sources */,

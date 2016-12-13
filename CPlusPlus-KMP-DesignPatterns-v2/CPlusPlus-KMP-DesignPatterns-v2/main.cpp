@@ -21,6 +21,8 @@
 #include "Command.h"
 #include "Iterator.h"
 #include "Observer.h"
+#include "State.h"
+
 
 using namespace std;
 
@@ -94,6 +96,8 @@ void displayMainMenu()
         cout << "12. View user action activity log [Command]\n";
         cout << "13. View current invoices [Iterator]\n";
         cout << "14. View daily store stats [Observer]\n";
+        cout << "15. Turn on admin permissions for employee [State]\n";
+
 
         
         cout << "\n\n";
@@ -101,7 +105,7 @@ void displayMainMenu()
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 14)
+        while (option < 1 || option > 15)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -154,6 +158,9 @@ void displayMainMenu()
                 break;
             case 14:
                 displaySiteStats();
+                break;
+            case 15:
+                turnOnAdminPermissions();
                 break;
 
             default:
