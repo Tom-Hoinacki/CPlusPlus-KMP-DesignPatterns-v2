@@ -23,6 +23,7 @@
 #include "Observer.h"
 #include "State.h"
 #include "Strategy.h"
+#include "Visitor.h"
 
 
 using namespace std;
@@ -99,8 +100,7 @@ void displayMainMenu()
         cout << "14. View daily store stats [Observer]\n";
         cout << "15. Turn on admin permissions for employee [State]\n";
         cout << "16. Turn on admin permissions for employee [Strategy]\n";
-
-
+        cout << "17. Check current storage capacity for warehouses [Visitor]\n";
 
         
         cout << "\n\n";
@@ -108,7 +108,7 @@ void displayMainMenu()
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 16)
+        while (option < 1 || option > 17)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -167,6 +167,9 @@ void displayMainMenu()
                 break;
             case 16:
                 testPayment();
+                break;
+            case 17:
+                warehouseReport();
                 break;
 
 
