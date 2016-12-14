@@ -22,6 +22,7 @@
 #include "Iterator.h"
 #include "Observer.h"
 #include "State.h"
+#include "Strategy.h"
 
 
 using namespace std;
@@ -97,6 +98,8 @@ void displayMainMenu()
         cout << "13. View current invoices [Iterator]\n";
         cout << "14. View daily store stats [Observer]\n";
         cout << "15. Turn on admin permissions for employee [State]\n";
+        cout << "16. Turn on admin permissions for employee [Strategy]\n";
+
 
 
         
@@ -105,7 +108,7 @@ void displayMainMenu()
         cout << "Enter selection number: ";
         cin >> option;
         
-        while (option < 1 || option > 15)
+        while (option < 1 || option > 16)
         {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -162,6 +165,10 @@ void displayMainMenu()
             case 15:
                 turnOnAdminPermissions();
                 break;
+            case 16:
+                testPayment();
+                break;
+
 
             default:
                 break;

@@ -22,6 +22,7 @@
 		650EE89F1DFE51650057A742 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE89D1DFE51650057A742 /* Iterator.cpp */; };
 		650EE8A21DFE73F10057A742 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A01DFE73F10057A742 /* Observer.cpp */; };
 		650EE8A51DFFCE460057A742 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A31DFFCE460057A742 /* State.cpp */; };
+		650EE8A81E0106F90057A742 /* Strategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 650EE8A61E0106F90057A742 /* Strategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +68,8 @@
 		650EE8A11DFE73F10057A742 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 		650EE8A31DFFCE460057A742 /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
 		650EE8A41DFFCE460057A742 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		650EE8A61E0106F90057A742 /* Strategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Strategy.cpp; path = ../Strategy.cpp; sourceTree = "<group>"; };
+		650EE8A71E0106F90057A742 /* Strategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Strategy.h; path = ../Strategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		650EE8711DF7C6FE0057A742 /* CPlusPlus-KMP-DesignPatterns-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				650EE8A61E0106F90057A742 /* Strategy.cpp */,
+				650EE8A71E0106F90057A742 /* Strategy.h */,
 				650EE8721DF7C6FE0057A742 /* main.cpp */,
 				650EE89E1DFE51650057A742 /* Iterator.h */,
 				650EE89D1DFE51650057A742 /* Iterator.cpp */,
@@ -188,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650EE8A81E0106F90057A742 /* Strategy.cpp in Sources */,
 				650EE8811DF7CCAB0057A742 /* KMP.cpp in Sources */,
 				650EE8901DFD3A9C0057A742 /* Facade.cpp in Sources */,
 				650EE8A51DFFCE460057A742 /* State.cpp in Sources */,
