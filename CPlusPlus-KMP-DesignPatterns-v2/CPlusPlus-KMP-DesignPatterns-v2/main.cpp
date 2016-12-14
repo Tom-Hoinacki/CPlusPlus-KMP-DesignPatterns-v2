@@ -99,7 +99,7 @@ void displayMainMenu()
         cout << "13. View current invoices [Iterator]\n";
         cout << "14. View daily store stats [Observer]\n";
         cout << "15. Turn on admin permissions for employee [State]\n";
-        cout << "16. Turn on admin permissions for employee [Strategy]\n";
+        cout << "16. Test payment processing system [Strategy]\n";
         cout << "17. Check current storage capacity for warehouses [Visitor]\n";
 
         
